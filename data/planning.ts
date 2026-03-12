@@ -1,0 +1,378 @@
+import { Day } from '@/types'
+
+export const days: Day[] = [
+  {
+    num: 'J1',
+    day: 'Lundi',
+    badges: [
+      { label: 'Pectoraux', type: 'muscu' },
+      { label: 'Hyrox', type: 'hyrox' },
+    ],
+    duration: '75 min',
+    sections: [
+      {
+        title: 'Pectoraux — Masse & Force',
+        exercises: [
+          {
+            icon: '🏋️',
+            name: 'Développé couché barre',
+            detail: 'Prise moyenne, descente contrôlée',
+            sets: '4×8-10',
+            type: 'muscu',
+          },
+          {
+            icon: '🏋️',
+            name: 'Développé incliné haltères',
+            detail: 'Inclinaison 30°, serrer en haut',
+            sets: '3×10-12',
+            type: 'muscu',
+          },
+          {
+            icon: '🏋️',
+            name: 'Écarté poulie vis-à-vis',
+            detail: 'Poulies hautes, contraction 2s',
+            sets: '3×12-15',
+            type: 'muscu',
+          },
+          {
+            icon: '🏋️',
+            name: 'Pompes lestées ou dips',
+            detail: 'Finisher, max de reps propres',
+            sets: '2×max',
+            type: 'muscu',
+          },
+        ],
+        tip: 'Repos 90s entre les séries lourdes, 60s sur l\'isolation.',
+      },
+      {
+        title: 'Hyrox — Explosivité',
+        exercises: [
+          {
+            icon: '🔥',
+            name: 'Burpees broad jump',
+            detail: 'Burpee + saut en longueur enchaîné',
+            sets: '4×8',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: 'Wall balls',
+            detail: '6-9 kg, cible 3m, squat complet',
+            sets: '3×15',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: 'Ski erg sprints',
+            detail: '200m sprints, repos 45s',
+            sets: '4×200m',
+            type: 'hyrox',
+          },
+        ],
+        tip: 'Enchaîner les mouvements avec le minimum de repos pour simuler la fatigue Hyrox.',
+      },
+    ],
+  },
+  {
+    num: 'J2',
+    day: 'Mardi',
+    badges: [{ label: 'Cuisses', type: 'muscu' }],
+    duration: '60 min',
+    sections: [
+      {
+        title: 'Cuisses — Volume & Puissance',
+        exercises: [
+          {
+            icon: '🦵',
+            name: 'Squat barre',
+            detail: 'Profondeur parallèle minimum',
+            sets: '4×8-10',
+            type: 'muscu',
+          },
+          {
+            icon: '🦵',
+            name: 'Presse à cuisses',
+            detail: 'Pieds hauts et écartés pour les fessiers',
+            sets: '3×10-12',
+            type: 'muscu',
+          },
+          {
+            icon: '🦵',
+            name: 'Fentes marchées haltères',
+            detail: 'Grands pas, genou arrière frôle le sol',
+            sets: '3×12/jambe',
+            type: 'muscu',
+          },
+          {
+            icon: '🦵',
+            name: 'Leg curl allongé',
+            detail: 'Contrôle l\'excentrique 3s',
+            sets: '3×12-15',
+            type: 'muscu',
+          },
+          {
+            icon: '🦵',
+            name: 'Mollets debout',
+            detail: 'Amplitude complète, pause en bas',
+            sets: '4×15-20',
+            type: 'muscu',
+          },
+        ],
+        tip: 'Pas de Hyrox aujourd\'hui : on préserve les jambes pour la séance de mercredi.',
+      },
+    ],
+  },
+  {
+    num: 'J3',
+    day: 'Mercredi',
+    badges: [
+      { label: 'Dos', type: 'muscu' },
+      { label: 'Hyrox', type: 'hyrox' },
+    ],
+    duration: '80 min',
+    sections: [
+      {
+        title: 'Dos — Épaisseur & Largeur',
+        exercises: [
+          {
+            icon: '💪',
+            name: 'Tractions pronation',
+            detail: 'Prise large, monter menton au-dessus',
+            sets: '4×6-10',
+            type: 'muscu',
+          },
+          {
+            icon: '💪',
+            name: 'Rowing barre',
+            detail: 'Buste 45°, coudes serrés',
+            sets: '4×8-10',
+            type: 'muscu',
+          },
+          {
+            icon: '💪',
+            name: 'Tirage vertical prise serrée',
+            detail: 'Prise neutre, squeeze en bas',
+            sets: '3×10-12',
+            type: 'muscu',
+          },
+          {
+            icon: '💪',
+            name: 'Rowing un bras haltère',
+            detail: 'Genou sur banc, tirage vers la hanche',
+            sets: '3×10-12',
+            type: 'muscu',
+          },
+        ],
+        tip: 'Maintenir le gainage du tronc sur chaque tirage pour protéger le bas du dos.',
+      },
+      {
+        title: 'Hyrox — Résistance à la fatigue',
+        exercises: [
+          {
+            icon: '🔥',
+            name: 'Rameur 1000m',
+            detail: 'Allure soutenue, cadence 26-30',
+            sets: '2×1000m',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: 'Sled push',
+            detail: 'Charge lourde, 25m aller-retour',
+            sets: '4×25m',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: 'Farmer carry',
+            detail: '2×24 kg, marche rapide et stable',
+            sets: '3×40m',
+            type: 'hyrox',
+          },
+        ],
+        tip: 'Travailler en zone inconfortable (essoufflé mais capable de maintenir la technique).',
+      },
+    ],
+  },
+  {
+    num: 'J4',
+    day: 'Jeudi',
+    badges: [
+      { label: 'Bras', type: 'muscu' },
+      { label: 'HIIT', type: 'cardio' },
+    ],
+    duration: '65 min',
+    sections: [
+      {
+        title: 'Biceps & Triceps — Supersets',
+        exercises: [
+          {
+            icon: '💪',
+            name: 'Curl barre EZ',
+            detail: 'Prise standard, pas de balancement',
+            sets: '4×10-12',
+            type: 'muscu',
+          },
+          {
+            icon: '💪',
+            name: 'Barre au front (skull crusher)',
+            detail: 'Barre EZ, descente au front',
+            sets: '4×10-12',
+            type: 'muscu',
+          },
+          {
+            icon: '💪',
+            name: 'Curl haltères marteau',
+            detail: 'Alternés, contrôle la descente',
+            sets: '3×12',
+            type: 'muscu',
+          },
+          {
+            icon: '💪',
+            name: 'Extension triceps poulie haute',
+            detail: 'Corde, écarter en bas',
+            sets: '3×12-15',
+            type: 'muscu',
+          },
+        ],
+        tip: 'Travailler en supersets biceps/triceps pour gagner du temps et maintenir l\'intensité.',
+      },
+      {
+        title: 'HIIT Cardio',
+        exercises: [
+          {
+            icon: '🏃',
+            name: 'Sprint / Repos',
+            detail: 'Vélo ou rameur : 30s sprint, 30s repos',
+            sets: '10 rounds',
+            type: 'cardio',
+          },
+          {
+            icon: '🏃',
+            name: 'Core circuit',
+            detail: 'Planche 45s + crunch vélo 20 + mountain climber 20',
+            sets: '3 tours',
+            type: 'cardio',
+          },
+        ],
+        tip: 'Le HIIT remplace le Hyrox aujourd\'hui — on cible le cardio pur.',
+      },
+    ],
+  },
+  {
+    num: 'J5',
+    day: 'Vendredi',
+    badges: [
+      { label: 'Épaules', type: 'muscu' },
+      { label: 'Hyrox EPG', type: 'hyrox' },
+    ],
+    duration: '75 min',
+    sections: [
+      {
+        title: 'Épaules — Force & Stabilité',
+        exercises: [
+          {
+            icon: '🏋️',
+            name: 'Développé militaire barre',
+            detail: 'Debout, gainage strict',
+            sets: '4×8-10',
+            type: 'muscu',
+          },
+          {
+            icon: '🏋️',
+            name: 'Élévations latérales haltères',
+            detail: 'Légère flexion coude, monter à l\'horizontale',
+            sets: '3×12-15',
+            type: 'muscu',
+          },
+          {
+            icon: '🏋️',
+            name: 'Oiseau inversé (rear delt)',
+            detail: 'Banc incliné ou debout penché',
+            sets: '3×12-15',
+            type: 'muscu',
+          },
+          {
+            icon: '🏋️',
+            name: 'Shrugs barre',
+            detail: 'Monter les épaules, tenir 2s en haut',
+            sets: '3×12',
+            type: 'muscu',
+          },
+        ],
+        tip: 'Ne pas tricher sur les élévations latérales — poids léger, exécution parfaite.',
+      },
+      {
+        title: 'Hyrox — Simulation EPG complète',
+        exercises: [
+          {
+            icon: '🔥',
+            name: 'Circuit EPG 6 tours',
+            detail: 'Enchaîner les 6 stations sans pause entre elles. Chronomètre chaque tour.',
+            sets: '6 tours',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: '→ Station 1 : Rameur',
+            detail: '500m à allure course',
+            sets: '',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: '→ Station 2 : Sled push',
+            detail: '25m charge compétition',
+            sets: '',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: '→ Station 3 : Burpees broad jump',
+            detail: '8 reps',
+            sets: '',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: '→ Station 4 : Farmer carry',
+            detail: '40m 2×24 kg',
+            sets: '',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: '→ Station 5 : Wall balls',
+            detail: '15 reps',
+            sets: '',
+            type: 'hyrox',
+          },
+          {
+            icon: '🔥',
+            name: '→ Station 6 : Ski erg',
+            detail: '250m sprint',
+            sets: '',
+            type: 'hyrox',
+          },
+        ],
+        tip: 'Objectif : noter le temps total et essayer de le battre chaque semaine. C\'est LA séance clé.',
+      },
+    ],
+  },
+  {
+    num: 'J6',
+    day: 'Samedi',
+    badges: [{ label: 'Récupération', type: 'actif' }],
+    duration: '30-45 min',
+    isRest: true,
+    restText: 'Récupération active : 30 min de marche rapide en extérieur + 15 min de mobilité articulaire (hanches, épaules, chevilles). Étirements doux, pas de charge. L\'objectif est de favoriser la circulation et la récupération musculaire.',
+  },
+  {
+    num: 'J7',
+    day: 'Dimanche',
+    badges: [{ label: 'Repos', type: 'repos' }],
+    duration: '—',
+    isRest: true,
+    restText: 'Repos complet. Pas d\'entraînement. Priorité au sommeil (8h minimum), à l\'hydratation et à une alimentation respectée. Le corps se construit au repos.',
+  },
+]
